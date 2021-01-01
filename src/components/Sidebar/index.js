@@ -21,7 +21,7 @@ const Sidebar = ({ isOpen, toggle }) => {
         <SidebarLink to='/'>Full Menu</SidebarLink>
       </SidebarMenu>
       <SideBtnWrap>
-        <SidebarRoute to='/'>Order Now</SidebarRoute>
+        <SidebarRoute to='/'>Pesan Sekarang</SidebarRoute>
       </SideBtnWrap>
     </SidebarContainer>
   );
