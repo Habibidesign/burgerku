@@ -9,6 +9,7 @@ import {
   HeroP,
   HeroBtn
 } from './HeroElements';
+
 import Aos from "aos";
 import "aos/dist/aos.css"
 
