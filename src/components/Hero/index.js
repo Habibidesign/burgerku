@@ -9,6 +9,8 @@ import {
   HeroP,
   HeroBtn
 } from './HeroElements';
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,9 +25,9 @@ const Hero = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <HeroContent>
         <HeroItems>
-          <HeroH1>Greatest Burger Ever</HeroH1>
-          <HeroP>Ready in 60 seconds</HeroP>
-          <HeroBtn>Place Order</HeroBtn>
+          <HeroH1 data-aos= "fade-down-right" >Greatest Burger Ever</HeroH1>
+          <HeroP data-aos= "fade-right" >Ready in 60 seconds</HeroP>
+          <HeroBtn data-aos= "fade-down">Place Order</HeroBtn>
         </HeroItems>
       </HeroContent>
     </HeroContainer>

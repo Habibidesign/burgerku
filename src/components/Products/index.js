@@ -11,15 +11,20 @@ import {
   ProductPrice,
   ProductButton
 } from './ProductsElements';
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 const Products = ({ heading, data }) => {
+  useEffect(()=> {
+    Aos.init({duration: 1500});
+  }, [])
   return (
     <ProductsContainer>
       <ProductsHeading>{heading}</ProductsHeading>
       <ProductWrapper>
         {data.map((product, index) => {
           return (
-            <ProductCard key={index}>
+            <ProductCard data-aos= "fade-down" key={index}>
               <ProductImg src={product.img} alt={product.alt} />
               <ProductInfo>
                 <ProductTitle>{product.name}</ProductTitle>
